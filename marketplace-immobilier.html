@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Marketplace immobilier Capsule Media - Découvrez nos propriétés à vendre et à louer." />
+    <title>Marketplace Immobilier — Capsule Media</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Capsule Media">
+          <img
+            class="brand-logo"
+            src="WhatsApp%20Image%202026-01-17%20at%2002.20.13.jpeg"
+            alt="Capsule Media"
+            width="150"
+            height="150"
+          />
+          <span class="brand-name">Capsule Media</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="sr-only">Ouvrir le menu</span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" data-nav>
+          <a class="nav-link" href="index.html">Accueil</a>
+          <a class="nav-link" href="a-propos.html">À propos</a>
+          <a class="nav-link" href="services.html">Nos services</a>
+          <a class="nav-link is-active" href="marketplace-immobilier.html">Marketplace</a>
+          <a class="nav-link" href="realisations.html">Réalisations</a>
+          <a class="nav-link" href="devis-reservation.html">Devis / Réservation</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+          <button class="theme-toggle" type="button" aria-label="Basculer le mode sombre/clair" data-theme-toggle>
+            <svg class="theme-icon-dark" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M10 3.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zm0-1.5a8 8 0 110 16 8 8 0 010-16z"/>
+            </svg>
+            <svg class="theme-icon-light" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm0 14a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm7-7a1 1 0 110 2 1 1 0 010-2zM3 10a1 1 0 110 2 1 1 0 010-2zm5.66-5.66a1 1 0 010 1.414L7.07 5.07a1 1 0 01-1.414-1.414l1.414-1.414a1 1 0 011.414 0zm3.48 9.9a1 1 0 010 1.414l-1.414 1.414a1 1 0 01-1.414-1.414l1.414-1.414a1 1 0 011.414 0zm1.414-7.07a1 1 0 011.414 0l1.414 1.414a1 1 0 01-1.414 1.414l-1.414-1.414a1 1 0 010-1.414zM7.07 14.93a1 1 0 011.414 0l1.414 1.414a1 1 0 01-1.414 1.414L7.07 16.34a1 1 0 010-1.414z"/>
+            </svg>
+          </button>
+          <div class="lang-wrap">
+            <label class="sr-only" for="lang-select">Langue</label>
+            <select id="lang-select" class="lang-select" data-lang-select>
+              <option value="fr">FR</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+          <a class="btn btn-primary nav-cta" href="contact.html#contact-form">Demander un devis</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <section class="page-hero">
+        <div class="container">
+          <p class="badge">Marketplace Immobilier</p>
+          <h1>Découvrez nos propriétés <span class="text-gradient">sélectionnées</span></h1>
+          <p class="lead">Une sélection de biens immobiliers à vendre et à louer, disponibles pour vous accompagner dans vos projets.</p>
+          <div class="inline-actions">
+            <a class="btn btn-primary" href="devis-reservation.html#immobilier">Contactez-nous</a>
+            <a class="btn btn-ghost" href="#proprietes">Voir les annonces</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Filtres et recherche</h2>
+            <p>Affinez votre recherche selon vos critères.</p>
+          </div>
+
+          <div class="marketplace-filters">
+            <div class="filter-group">
+              <label for="filter-type">Type de bien</label>
+              <select id="filter-type" class="filter-select">
+                <option value="">Tous les types</option>
+                <option value="appartement">Appartement</option>
+                <option value="maison">Maison</option>
+                <option value="terrain">Terrain</option>
+                <option value="commercial">Local commercial</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filter-operation">Type d'opération</label>
+              <select id="filter-operation" class="filter-select">
+                <option value="">Tous</option>
+                <option value="vente">Vente</option>
+                <option value="location">Location</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filter-price">Gamme de prix</label>
+              <select id="filter-price" class="filter-select">
+                <option value="">Tous les prix</option>
+                <option value="0-50">0 - 50 millions</option>
+                <option value="50-100">50 - 100 millions</option>
+                <option value="100-200">100 - 200 millions</option>
+                <option value="200+">200+ millions</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filter-bedrooms">Chambres</label>
+              <select id="filter-bedrooms" class="filter-select">
+                <option value="">Toutes</option>
+                <option value="1">1 chambre</option>
+                <option value="2">2 chambres</option>
+                <option value="3">3 chambres</option>
+                <option value="4+">4+ chambres</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proprietes" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Annonces disponibles</h2>
+            <p>12 propriétés correspondent à votre recherche.</p>
+          </div>
+
+          <div class="properties-grid">
+            <!-- Propriété 1 -->
+            <div class="property-card">
+              <div class="property-image" style="background: linear-gradient(135deg, #0b5d1e, #0f7a2a);">
+                <span class="property-badge">Vente</span>
+              </div>
+              <div class="property-content">
+                <div class="property-title">Appartement spacieux, Douala</div>
+                <div class="property-details">
+                  <span>3 chambres</span>
+                  <span>120 m²</span>
+                  <span>2 salles de bain</span>
+                </div>
+                <div class="property-price">35 millions FCFA</div>
+                <p class="property-description">Bel appartement récemment rénové, situé dans un quartier dynamique avec accès facile aux commodités.</p>
+                <div class="property-actions">
+                  <a class="btn btn-secondary" href="devis-reservation.html#immobilier">Intéressé</a>
+                  <a class="btn btn-ghost" href="contact.html#contact-form">Plus d'infos</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Propriété 2 -->
+            <div class="property-card">
+              <div class="property-image" style="background: linear-gradient(135deg, #0f7a2a, #16a34a);">
+                <span class="property-badge">Location</span>
+              </div>
+              <div class="property-content">
+                <div class="property-title">Villa moderne, Yaoundé</div>
+                <div class="property-details">
+                  <span>4 chambres</span>
+                  <span>250 m²</span>
+                  <span>3 salles de bain</span>
+                </div>
+                <div class="property-price">1,5 millions FCFA/mois</div>
+                <p class="property-description">Villa contemporaine avec piscine et jardin, idéale pour les familles, sécurisée 24/7.</p>
+                <div class="property-actions">
+                  <a class="btn btn-secondary" href="devis-reservation.html#immobilier">Réserver</a>
+                  <a class="btn btn-ghost" href="contact.html#contact-form">Plus d'infos</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Propriété 3 -->
+            <div class="property-card">
+              <div class="property-image" style="background: linear-gradient(135deg, #16a34a, #22c55e);">
+                <span class="property-badge">Vente</span>
+              </div>
+              <div class="property-content">
+                <div class="property-title">Terrain constructible, Buea</div>
+                <div class="property-details">
+                  <span>Terrain</span>
+                  <span>500 m²</span>
+                  <span>Vue panoramique</span>
+                </div>
+                <div class="property-price">12 millions FCFA</div>
+                <p class="property-description">Magnifique terrain viabilisé avec vue sur la montagne, parfait pour construction résidentielle.</p>
+                <div class="property-actions">
+                  <a class="btn btn-secondary" href="devis-reservation.html#immobilier">Intéressé</a>
+                  <a class="btn btn-ghost" href="contact.html#contact-form">Plus d'infos</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Propriété 4 -->
+            <div class="property-card">
+              <div class="property-image" style="background: linear-gradient(135deg, #0a5f38, #0b5d1e);">
+                <span class="property-badge">Location</span>
+              </div>
+              <div class="property-content">
+                <div class="property-title">Local commercial, Douala</div>
+                <div class="property-details">
+                  <span>Commercial</span>
+                  <span>80 m²</span>
+                  <span>Rez-de-chaussée</span>
+                </div>
+                <div class="property-price">800k FCFA/mois</div>
+                <p class="property-description">Local commercial idéalement situé au cœur du centre-ville, accès facile pour clients.</p>
+                <div class="property-actions">
+                  <a class="btn btn-secondary" href="devis-reservation.html#immobilier">Louer</a>
+                  <a class="btn btn-ghost" href="contact.html#contact-form">Plus d'infos</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Propriété 5 -->
+            <div class="property-card">
+              <div class="property-image" style="background: linear-gradient(135deg, #0f7a2a, #0b5d1e);">
+                <span class="property-badge">Vente</span>
+              </div>
+              <div class="property-content">
+                <div class="property-title">Studio cosy, Douala</div>
+                <div class="property-details">
+                  <span>1 chambre</span>
+                  <span>45 m²</span>
+                  <span>1 salle de bain</span>
+                </div>
+                <div class="property-price">8 millions FCFA</div>
+                <p class="property-description">Petit studio charmant, parfait pour un étudiant ou investisseur recherchant un bien de rapport.</p>
+                <div class="property-actions">
+                  <a class="btn btn-secondary" href="devis-reservation.html#immobilier">Intéressé</a>
+                  <a class="btn btn-ghost" href="contact.html#contact-form">Plus d'infos</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Propriété 6 -->
+            <div class="property-card">
+              <div class="property-image" style="background: linear-gradient(135deg, #16a34a, #0f7a2a);">
+                <span class="property-badge">Vente</span>
+              </div>
+              <div class="property-content">
+                <div class="property-title">Duplex moderne, Yaoundé</div>
+                <div class="property-details">
+                  <span>2 chambres</span>
+                  <span>110 m²</span>
+                  <span>2 salles de bain</span>
+                </div>
+                <div class="property-price">42 millions FCFA</div>
+                <p class="property-description">Duplex lumineux avec cuisine équipée, idéal pour couple ou petite famille à Yaoundé.</p>
+                <div class="property-actions">
+                  <a class="btn btn-secondary" href="devis-reservation.html#immobilier">Intéressé</a>
+                  <a class="btn btn-ghost" href="contact.html#contact-form">Plus d'infos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted">
+        <div class="container">
+          <div class="section-head">
+            <h2>Pourquoi choisir Capsule Media ?</h2>
+            <p>Pour vos besoins immobiliers, nous offrons un service complet et transparent.</p>
+          </div>
+
+          <div class="card-grid">
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 21v-8M3 10l9-8 9 8v8H3v-8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                  <path d="M9 21h6v-4H9v4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3>Propriétés vérifiées</h3>
+              <p>Chaque bien est inspecté et documenté pour garantir la qualité et la transparence.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z" stroke="currentColor" stroke-width="1.8" />
+                  <path d="M12 6v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3>Réponse rapide 24h</h3>
+              <p>Notre équipe vous recontacte dans les 24h pour répondre à vos questions.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M16 21H8a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                  <path d="M12 17v.01M12 13v.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3>Accompagnement complet</h3>
+              <p>Du premier contact à la signature, nous pilotons tout pour vous simplement.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M9 12l2 2 4-4M7 20h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3>Processus sécurisé</h3>
+              <p>Tous les documents sont gérés de manière confidentielle et sécurisée.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta">
+            <div>
+              <h2>Vous cherchez une propriété ?</h2>
+              <p>Contactez notre équipe immobilière pour trouver le bien qui vous correspond.</p>
+            </div>
+            <div class="cta-actions">
+              <a class="btn btn-primary" href="devis-reservation.html#immobilier">Décrire votre besoin</a>
+              <a class="btn btn-ghost" href="contact.html">Contacter directement</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer style="margin-top: 80px; padding: 20px 0; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 13px;">
+      <div class="container">
+        <p>&copy; <span data-year></span> Capsule Media. Tous droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+      </div>
+    </footer>
+
+    <div id="google_translate_element"></div>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
